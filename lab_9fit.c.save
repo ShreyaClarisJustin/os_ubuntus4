@@ -1,0 +1,22 @@
+#include<stdio.h>
+void firstfit(int tot_no_blk,int blk_space[],int tot_no_proc,int proc_space[]);
+void main(){
+	int tot_no_blk,tot_no_proc;
+	int blk_space[20],proc_space[20];
+	printf("enter the no of blocks of memory");
+	scanf("%d",&tot_no_blk);
+	printf("enter the size of each block");
+	for(int i=0;i<tot_no_blk;i++){
+		scanf("%d",&blk_space[i]);
+	}
+	printf("enter the no of processes");
+        scanf("%d",&tot_no_proc);
+        printf("enter the size of each process");
+        for(int i=0;i<tot_no_proc;i++){
+                scanf("%d",&proc_space[i]);
+        }
+	firstfit(tot_no_blk,blk_space,tot_no_proc,proc_space);
+}
+void firstfit(int tot_no_blk,int blk_space[],int tot_no_proc,int proc_space[]){
+	
+}
